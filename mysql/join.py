@@ -5,9 +5,9 @@ from toolkit.toolkit_cfg import toolkit_cfg
 
 # sql语句拼接
 def join_sql():
-    mysql_dir = toolkit_cfg()['mysql_dir']
-    pre_listdir = set(os.listdir(mysql_dir))
     while 1:
+        mysql_dir = toolkit_cfg()['mysql_dir']
+        pre_listdir = set(os.listdir(mysql_dir))
         time.sleep(2)
         now_listdir = set(os.listdir(mysql_dir))
         dif_listdir = now_listdir - pre_listdir
